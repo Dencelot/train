@@ -1,0 +1,512 @@
+<!DOCTYPE html> <!сообщаем браузеру как стоит обрабатывать эту страницу>
+<html lang="ru"> <!оболочка документа,указываем язык содержимого>
+   <head> <!заголовок страницы,контейнер для других важных данных>
+      <title>TRAIN</title> <!заголовок страницы в браузере>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/style.css"/> <!связываем с сss>
+      <link rel="shortcut icon" href="./img/icons/-fitness-center_90564.svg" />
+   </head>
+   <body> <!отображаемое тело страницы >
+      <div class="wrapper">
+         <header class="header">
+            <div class="header__row">
+               <nav class="header__menu menu">
+                  <div class="menu__body">
+                     <ul class="menu__list">
+                        <li><span id="fullbody" class="menu__link">FullBody</span></li>
+                        <li><span id="about" class="menu__link">описание</span></li>
+                        <li><span id="warm" class="menu__link">разминка</span></li>
+                        <li><span id="train" class="menu__link">тренировки</span></li>
+                     </ul>
+                  </div>
+               </nav>
+               <div class="header__logo"><img src="./img/icons/-fitness-center_90564.svg" alt=""></div>
+            </div>
+         </header>
+         <main class="page">
+            <div class="main-screen">
+               <div class="main-screen__bg ibg">
+                  <img src="./img/main.jpg" alt="">
+               </div>
+            </div>
+            <div class="content">
+               <section class="fullbody">
+                  <div class="container">
+                     <div class="fullbody__block block">
+                        <h1 class="block__title">fullbody</h1>
+                        <div class="block__text">«full body» дословно означает «все тело», о чем и говорит ее методика – проработка всего тела за одну тренировку</div>
+                     </div>
+                     
+                  </div>
+               </section>
+               <section class="about">
+                  <div class="about__row">
+                     <div class="about__column about__column_big">
+                        <div class="about__item item">
+                           <span class="item__image ibg"><img src="./img/atm3.jpg" alt=""></span>
+                        </div>
+                     </div>
+                     <div class="about__column">
+                        <div class="about__content block">
+                           <h2 class="block__title block__title_p">описание</h2>
+                           <div class="block__text block__text_j">Данная программа рассчитывает рабочие подходы и основана на принципе «прогрессии нагрузок»</div>
+                           <div class="block__image ibg"><img src="./img/kardio.jpg" alt=""></div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="fullbody warm">
+                  <div class="container">
+                     <div class="fullbody__block block">
+                        <h1 class="block__title">разминка</h1>
+                        <div class="block__text">Вольный комплекс упражнений для подготовки всех систем организма к работе. Многосуставная разминка от шеи до колен и/или легкое кардио.</div>
+                     </div>
+                     
+                  </div>
+               </section>
+               <section class="about warmTrain">
+                  <div class="about__row">
+                     <div class="about__column about__column_big">
+                        <div class="about__item item">
+                           <span class="item__image ibg"><img src="./img/workdelt.jpg" alt=""></span>
+                        </div>
+                     </div>
+                     <div class="about__column">
+                        <div class="about__content block">
+                           <h2 class="block__title block__title_p">Разминочные подходы</h2>
+                           <div class="block__text block__text_j">Разминочные подходы – предшествуют рабочим, выполняй с меньшим весом. Колличество таких подходов выбирай самостоятельно </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               
+               <section class="train">
+                  <div class="train__row">
+                     <div class="train__column train1">
+                        <div class="train__menu">
+                           <h2 class="block__title train__title">тренировка <p>для девушек</p></h2>
+                           <ul class="train__list">
+                              <li>
+                                 <div class="train__block oneGirls">
+                                    <span  class="train__link benchHammer">Жим гантелей</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="benchHammer" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 8-12 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/benchGirls.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightBenchHammer' class="exercise__work" type="number" >
+                                             <input id='secondWeightBenchHammer' class="exercise__work" type="number">
+                                             <input id='thirdWeightBenchHammer' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsBenchHammer' class="exercise__work" type="number">
+                                             <input id='secondRepsBenchHammer' class="exercise__work" type="number">
+                                             <input id='thirdRepsBenchHammer' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonBenchHammer'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="train__block twoGirls">
+                                    <span  class="train__link mahiGirls">разгибание рук в блоке</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="mahiGirls" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 8-12 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/block.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightMahiGirls' class="exercise__work" type="number" >
+                                             <input id='secondWeightMahiGirls' class="exercise__work" type="number">
+                                             <input id='thirdWeightMahiGirls' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsMahiGirls' class="exercise__work" type="number">
+                                             <input id='secondRepsMahiGirls' class="exercise__work" type="number">
+                                             <input id='thirdRepsMahiGirls' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonMahiGirls'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="train__block threeGirls">
+                                    <span  class="train__link liftGirls">тяга горизонтального блока</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="liftGirls" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 8-12 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/liftGirls2.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightLiftGirls' class="exercise__work" type="number" >
+                                             <input id='secondWeightLiftGirls' class="exercise__work" type="number">
+                                             <input id='thirdWeightLiftGirls' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsLiftGirls' class="exercise__work" type="number">
+                                             <input id='secondRepsLiftGirls' class="exercise__work" type="number">
+                                             <input id='thirdRepsLiftGirls' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonLiftGirls'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="train__block fourGirls">
+                                    <span  class="train__link pressLegsGirls">жим ногами</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="pressLegsGirls" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 12 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/legPressGirls.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightPressLegsGirls' class="exercise__work" type="number" >
+                                             <input id='secondWeightPressLegsGirls' class="exercise__work" type="number">
+                                             <input id='thirdWeightPressLegsGirls' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsPressLegsGirls' class="exercise__work" type="number">
+                                             <input id='secondRepsPressLegsGirls' class="exercise__work" type="number">
+                                             <input id='thirdRepsPressLegsGirls' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonPressLegsGirls'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="train__block fiveGirls">
+                                    <span  class="train__link lungesGirls">выпады</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="lungesGirls" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода каждой ногой на 8-12 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/lungesGirls.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightLungesGirls' class="exercise__work" type="number" >
+                                             <input id='secondWeightLungesGirls' class="exercise__work" type="number">
+                                             <input id='thirdWeightLungesGirls' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsLungesGirls' class="exercise__work" type="number">
+                                             <input id='secondRepsLungesGirls' class="exercise__work" type="number">
+                                             <input id='thirdRepsLungesGirls' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonLungesGirls'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+
+                              <li>
+                                 <div class="train__block sixGirls">
+                                    <span  class="train__link liftLegsGirls">румынская тяга</span>
+
+                                    <div id="liftLegsGirls" class="exercise">
+                                       <div  class="train__link lineAfterSpan"></div>
+
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 12 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/rumLiftGirls.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightLiftLegsGirls' class="exercise__work" type="number" >
+                                             <input id='secondWeightLiftLegsGirls' class="exercise__work" type="number">
+                                             <input id='thirdWeightLiftLegsGirls' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsLiftLegsGirls' class="exercise__work" type="number">
+                                             <input id='secondRepsLiftLegsGirls' class="exercise__work" type="number">
+                                             <input id='thirdRepsLiftLegsGirls' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonLiftLegsGirls'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>                           </ul>
+                        </div>
+                     </div>
+                     <div class="train__column train2">
+                        <div class="train__menu">
+                           <h2 class="block__title train__title">тренировка <p>для мужчин</p></h2>
+                           <ul class="train__list">
+                              <li>
+                                 <div class="train__block one">
+                                    <span  class="train__link benchInclined">Жим на наклонной скамье</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="benchInclined" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 6 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/benchinclined2.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightInclined' class="exercise__work" type="number" >
+                                             <input id='secondWeightInclined' class="exercise__work" type="number">
+                                             <input id='thirdWeightInclined' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsInclined' class="exercise__work" type="number">
+                                             <input id='secondRepsInclined' class="exercise__work" type="number">
+                                             <input id='thirdRepsInclined' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonInclined'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="train__block two">
+                                    <span  class="train__link bars">Брусья</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="bars" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 8 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/bars2.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightBars' class="exercise__work" type="number" >
+                                             <input id='secondWeightBars' class="exercise__work" type="number">
+                                             <input id='thirdWeightBars' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsBars' class="exercise__work" type="number">
+                                             <input id='secondRepsBars' class="exercise__work" type="number">
+                                             <input id='thirdRepsBars' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonBars'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+
+                              </li>
+                              <li>
+                                 <div class="train__block three">
+                                    <span  class="train__link mahi">махи</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="mahi" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 8-12 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/mahi2.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightMahi' class="exercise__work" type="number" >
+                                             <input id='secondWeightMahi' class="exercise__work" type="number">
+                                             <input id='thirdWeightMahi' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsMahi' class="exercise__work" type="number">
+                                             <input id='secondRepsMahi' class="exercise__work" type="number">
+                                             <input id='thirdRepsMahi' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonMahi'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="train__block four">
+                                    <span  class="train__link lift">тяга вертикального блока</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="lift" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 8-12 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/vertLift2.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightLift' class="exercise__work" type="number" >
+                                             <input id='secondWeightLift' class="exercise__work" type="number">
+                                             <input id='thirdWeightLift' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsLift' class="exercise__work" type="number">
+                                             <input id='secondRepsLift' class="exercise__work" type="number">
+                                             <input id='thirdRepsLift' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonLift'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="train__block five">
+                                    <span  class="train__link pressLegs">жим ногами</span>
+                                    <div  class="train__link lineAfterSpan"></div>
+
+                                    <div id="pressLegs" class="exercise">
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 8 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/pressLegs2.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightPressLegs' class="exercise__work" type="number" >
+                                             <input id='secondWeightPressLegs' class="exercise__work" type="number">
+                                             <input id='thirdWeightPressLegs' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsPressLegs' class="exercise__work" type="number">
+                                             <input id='secondRepsPressLegs' class="exercise__work" type="number">
+                                             <input id='thirdRepsPressLegs' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonPressLegs'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>
+
+                              <li>
+                                 <div class="train__block six">
+                                    <span  class="train__link liftLegs">румынская тяга</span>
+                                    <div id="liftLegs" class="exercise">
+                                       <div  class="train__link lineAfterSpan"></div>
+
+                                       <div class="block__text exercise__text">выполни три рабочих подхода на 8 повторений и внеси в таблицу</div>
+                                       <div class="block__image ibg"><img src="./img/rumLift2.jpg" alt=""></div>
+                                       <div class="exercise__row">
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">подходы</h2>
+                                             <span class="exercise__set">№1</span>
+                                             <span class="exercise__set">№2</span>
+                                             <span class="exercise__set">№3</span>
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">вес</h2>
+                                             <input id='firstWeightLiftLegs' class="exercise__work" type="number" >
+                                             <input id='secondWeightLiftLegs' class="exercise__work" type="number">
+                                             <input id='thirdWeightLiftLegs' class="exercise__work" type="number">
+                                          </div>
+                                          <div class="exercise__column">
+                                             <h2 class="block__title train__title last">повторения</h2>
+                                             <input id='firstRepsLiftLegs' class="exercise__work" type="number">
+                                             <input id='secondRepsLiftLegs' class="exercise__work" type="number">
+                                             <input id='thirdRepsLiftLegs' class="exercise__work" type="number">
+                                          </div>
+                                          
+                                       </div>
+                                       <button id='buttonLiftLegs'>Следующая тренировка</button>
+                                    </div>
+                                 </div>
+                              </li>                           </ul>
+                        </div>
+                     </div>
+               </section>
+            </div>
+            
+            <footer class="footer">
+               <div>
+                  <span>Прогрессируй и все такое!</span>
+               </div>
+            </footer> 
+         </main>
+         
+      </div>
+      
+      <script src="js/script.js"></script>
+   </body>
+</html>
